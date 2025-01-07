@@ -19,3 +19,5 @@ repos:
       - id: flake8
         name: flake8 (python)
         stages: [pre-commit]
+        # Ignora erros que podem ser corrigidos automaticamente
+        args: [--ignore=F401]
