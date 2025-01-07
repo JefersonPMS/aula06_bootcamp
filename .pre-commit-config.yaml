@@ -1,10 +1,21 @@
 repos:
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2  # Use a versão mais recente
+    hooks:
+      - id: isort
+        name: isort (python)
+        stages: [pre-commit]
+
   - repo: https://github.com/psf/black
     rev: 23.9.1  # Use a versão mais recente
     hooks:
       - id: black
+        name: black (python)
+        stages: [pre-commit]
 
-  - repo: https://github.com/PyCQA/flake8  # URL atualizada
+  - repo: https://github.com/PyCQA/flake8
     rev: 6.0.0  # Use a versão mais recente
     hooks:
       - id: flake8
+        name: flake8 (python)
+        stages: [pre-commit]
